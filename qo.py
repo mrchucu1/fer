@@ -13,7 +13,7 @@ def direccionesConjugadas(fStr, vars, Q, b, x0, ds):
     b         = Matrix(b)
     x0        = Matrix(x0)
     iteracion = 0
-    print("Usando el método de direcciones conjugadas", "con Q:\n%s\nb=%s\nd=\n%s\n en la siguiente función\n%s"%(sE(Q), sE(b.T), sE(x0.t), sE(ds), sE(fStr)))
+    print("Usando el método de direcciones conjugadas", "con Q:\n%s\nb=%s\nd=\n%s\n en la siguiente función\n%s"%(sE(Q), sE(b.T), sE(x0.T), sE(ds), sE(fStr)))
     f = sympify(fStr)
     #misntras aún nos queden direcciones que operar iniciamos la iteración
     while len(ds) > 0:
