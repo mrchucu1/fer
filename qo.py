@@ -28,7 +28,7 @@ def direccionesConjugadas(fStr, vars, Q, b, x0, ds):
         #obtenemos xn+1 apartir de xn y an
         x1    = x0 + a0[0] * d0
         zipX1 = list(zip(vars, x1))
-        print("iteración %d:{\nx%d:\n%s\nf(x%d)=%f\n}\n"%(iteracion, iteracion, sE(x1), iteracion, f.subs(zipX1)))
+        print("iteración %d:{\nx%d:\n%s\nf(x%d)=%s\n}\n"%(iteracion, iteracion, sE(x1), iteracion, f.subs(zipX1)))
         x0 = x1
     print("No. de iteraciones: ",iteracion)
     return zipX1
